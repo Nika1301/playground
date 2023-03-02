@@ -62,7 +62,7 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 100px;
+  width: 100%;
   height: 100px;
 }
 
@@ -73,24 +73,54 @@ h1 {
   height: 100px;
 }
 
+@media (min-width: 599px) {
+  .box--two {
+    background-color: rgb(186, 144, 238);
+
+    width: 200px;
+    height: 100px;
+  }
+}
+@media (min-width: 1199px) {
+  .box--two {
+    background-color: rgb(144, 180, 238);
+
+    width: 400px;
+    height: 100px;
+  }
+}
+
 .box--three {
   background-color: lightpink;
 
-  width: 50px;
+  width: 200px;
   height: 250px;
 }
-
+@media (orientation: landscape) {
+  .box--three {
+    background-color: rgb(182, 209, 255);
+    width: auto;
+    height: auto;
+  }
+}
 .box--four {
   background-color: lightgray;
 
   width: 100px;
   height: 100px;
 }
-
+@media (prefers-color-scheme:dark)
+{
+  .box--four {
+    background-color: rgb(6, 6, 6);
+  }  
+}
 .box--five {
   width: 100%;
 }
-
+@media (min-width: 1200px){
+  
+}
 .box--five img {
   width: 100%;
 }
